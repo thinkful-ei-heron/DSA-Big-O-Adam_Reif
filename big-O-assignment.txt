@@ -1,0 +1,76 @@
+1. What is the Big O for this?
+
+	a) Constant time O(1). No matter how many people are in the room, you will only yell once.
+
+	b) Linear time O(p). Asking one person at a time, the time it will take to find a match, worst case, is directly proportional to the number of people you have to ask. 
+
+p = number of people
+
+
+2. Even or Odd
+
+	Constant time O(1). No matter the size of the value, it will always be a single input. The basic math operation only needs to perform once.
+
+
+3. Are you there?
+
+	Polynomial time O(a^2). The nested loop is the identifier. The algorithm must run 2 levels of looping, one for each array.
+
+  a = array
+  2 = loops, one for each array
+
+
+4. Doubler
+
+	Linear time O(a). The algorithm loops through the array, performing a basic math operation on each number item, returning the array with each item doubled. The time complexity is directly proportional to the number of items in the array.
+
+  a = array length
+
+
+5. Naive search
+
+	Linear time O(a). This function is looping over an array and comparing each item to an item input. If they are equal, the function returns the item. In the worst case, the matching item would be the last item checked. This means that the time complexity is directly proportional to the array length.
+
+  a = array length
+
+
+6. Creating pairs:
+
+	Polynomial time O(a^2). This function has 2 levels of loops. The array is looped through once, selecting the the first item in the array. It is then looped through again, selecting the next item in line. It then prints both selections to the console as a pair seperated by a comma.
+
+  a = array
+  2 = loops, twice through the same array
+
+
+7. Compute the sequence
+
+	Linear time O(n). This function takes a num, loops through each number from 1 to num. It then checks that number with some conditions, performing a basic math operation for some numbers, then pushes the number to an array. It then returns the array. The dominate term is the loop making the time complexity directly proportional to the size of the number
+
+  n = number
+
+
+8. An efficient search
+
+	Logarithmic time O(log(a)). This function loops through an array, comparing the item input to the current index and cutting the array in half based on the comparison and setting the minindex as current index which is set as either + or - 1 of the previous index, depending on the result of the comparison. Once minindex is less than or equal to maxindex, the loop stops and the result, which is the item, is returned. This algorithm is logarithmic because, while the input may increase, the run time will decrease because of the function decreasing the input by half on each iteration.
+
+  a = array length
+
+
+9. Random element
+
+	Constant time O(1). No matter the size of the area, the function performs a basic math operation to return a random item from the array.
+
+
+10. What Am I?
+
+	Linear time O(n). This function takes the integer input, n, and uses some conditions and a loop to determine if the input is odd. If odd, it returns true, else, it returns false. Because the function loops over each number greater than 2, from 1 to n, the worst case will require the loop making the run time complexity directly proportional to the input size.
+
+  n = number
+
+11. *See big-O-coding.js
+
+12. *See big-O-coding.js
+
+13. *See big-O-coding.js
+
+14. *See big-O-coding.js
