@@ -4,7 +4,7 @@
 
 	b) Linear time O(p). Asking one person at a time, the time it will take to find a match, worst case, is directly proportional to the number of people you have to ask. 
 
-p = number of people
+	p = number of people
 
 
 2. Even or Odd
